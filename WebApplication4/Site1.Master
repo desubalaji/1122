@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication4.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {            height: 16px;
+        }
+        .style4
+        {
+            height: 88px;
+        }
+        .style5
+        {
+            height: 88px;
+            width: 756px;
+        }
+        .style6
+        {}
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height: 157px">
+        <table class="style1">
+            <tr>
+                <td class="style5" 
+                    style="background-image: url('/Images/total title.png'); background-repeat: no-repeat; background-position: center center">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                <td class="style4" 
+                    
+                    style="background-image: url('/Images/logosmall.jpg'); background-repeat: no-repeat; background-position: center center">
+                </td>
+            </tr>
+            <tr>
+                <td class="style2" colspan="2" style="background-color: #009999">
+                    <asp:Menu ID="Menu1" name="Menu1" runat="server" ForeColor="White" Orientation="Horizontal" 
+                        
+                        style="font-weight: 700; color: #FFFFFF; font-family: Georgia; font-size: large" 
+                        onmenuitemclick="Menu1_MenuItemClick">
+                        <Items>
+                            <asp:MenuItem Text="Home          |" Value="Home||" 
+                                NavigateUrl="~/PL/Home.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="About Us        |" Value="About Us||" 
+                                NavigateUrl="~/PL/AboutUs.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="My Account        |" Value="My Account||" 
+                                NavigateUrl="~/PL/MyAccount.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text=" Help      |" Value="Help||" 
+                                NavigateUrl="~/PL/Help.aspx">
+                            </asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td class="style6" colspan="2" style="background-color: #FF9933">
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <br />
+    </div>
+    </form>
+</body>
+</html>

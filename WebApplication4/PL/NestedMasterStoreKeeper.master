@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="NestedMasterStoreKeeper.master.cs" Inherits="WebApplication4.PL.NestedMasterStoreKeeper" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .style8
+    {
+        background-color: #009999;
+        }
+    .style9
+    {
+    }
+    .style10
+    {
+        font-size: large;
+    }
+</style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <p style="color: #FFFFFF">
+    <table class="style1">
+        <tr>
+            <td class="style8">
+                <asp:Menu ID="Menu2" runat="server" ForeColor="White" Orientation="Horizontal" 
+                    onmenuitemclick="Menu2_MenuItemClick" 
+                    style="font-family: Georgia; font-size: large">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/PL/DrugDetailsStoreKeeper.aspx" Text="| Drug Details  |" 
+                            Value="Drug Details"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/PL/Billing.aspx" Text="Billing  |" 
+                            Value="Daily Sales Report"></asp:MenuItem>
+<asp:MenuItem Text="Report  |" Value="Daily Sales Report" 
+                            NavigateUrl="~/PL/DailySalesReport.aspx"></asp:MenuItem>
+                        <asp:MenuItem></asp:MenuItem>
+                        <asp:MenuItem></asp:MenuItem>
+                        <asp:MenuItem></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/PL/Logout.aspx" Text="Logout" Value="New Item">
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td class="style9" 
+                
+                
+                style="background-color: #FFFFFF; font-family: Georgia; font-size: large; font-weight: bold; font-style: normal; color: #FFFFFF">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    <table class="style1">
+                        <tr>
+                            <td>
+                <asp:Label ID="Label1" runat="server" ForeColor="#009999" 
+                    style="font-weight: 700; font-family: Georgia" Text="Label" 
+                    CssClass="style10"></asp:Label>
+                            </td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                    <p>
+                    </p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style9">
+                &nbsp;</td>
+        </tr>
+    </table>
+</p>
+<p>
+    <br />
+</p>
+</asp:Content>
